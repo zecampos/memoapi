@@ -29,11 +29,11 @@ function createTable(conn){
 
 function execSQLQuery(sqlQry, res){
  const connection = mysql.createConnection({
-  host     : 'b4e9xxkxnpu2v96i.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+  host     : 'clientesmemo.mysql.dbaas.com.br',
   port     : 3306,
-  user     : 'akib0r322v7akkwh',
-  password : 'zth46xq7n57t97xl',
-  database : 's9q1ibpkfl2kbg1x'
+  user     : 'clientesmemo',
+  password : 'Memo@2018',
+  database : 'clientesmemo'
 });
 connection.query(sqlQry, function(error, results, fields){
     if(error) 
